@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cp7App.Views.SmarConfigPage">
+    <ContentPage.Content>
+        <StackLayout Spacing="12" Padding="15">
+            <Label Text="SSID" FontSize="Medium" />
+            <Entry x:Name="tb_ssid" FontSize="Small" IsEnabled="False" />
+            <Label Text="BSSID" FontSize="Medium" />
+            <Editor x:Name="tb_bssid" FontSize="Small" Margin="0" IsEnabled="False" />
+            <Button x:Name="bt_refresh" Text="刷新Wifi连接信息"></Button>
+            <Label Text="Wifi密码" FontSize="Medium" />
+            <Editor  FontSize="Small" Margin="0" x:Name="et_pwd" />
+            <Label Text="设备数量" FontSize="Medium" />
+            <Editor Text="1" FontSize="Small" Margin="0" x:Name="et_dvcount" />
+            <Picker Title="配网模式(默认:广播模式)" x:Name="pk_mode" >
+                <Picker.Items>
+                    <x:String>广播模式</x:String>
+                    <x:String>组播模式</x:String>
+                </Picker.Items>
+            </Picker>
+            <Button x:Name="bt_start" Text="开始配网"></Button>
+            <Button x:Name="bt_cancel" Text="停止配网"></Button>
+            <ActivityIndicator x:Name="ai" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
