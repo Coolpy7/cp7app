@@ -87,7 +87,13 @@ namespace Cp7App.Views
 
                     List<SmartConfigResult> res = await EspTouch.SetSmartConfigTask(ssids[0], ssids[1], et_pwd.Text, bmode, dc);
                     ai.IsRunning = false;
-
+                    if (res.Count == 1 && !res[0].IsCancel && !res[0].IsSus)
+                    {
+                        await Application.Current.MainPage.DisplayAlert("Coolpy7", "没有任何设备配网成功", "OK");
+                        return;
+                    }
+                    var resinfo =  Newtonsoft.Json.JsonConvert.SerializeObject(res);
+                    await Application.Current.MainPage.DisplayAlert("Coolpy7", resinfo, "OK");
                 }
             }
         }
