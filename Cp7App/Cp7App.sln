@@ -7,11 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cp7App.Android", "Cp7App\Cp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cp7App.iOS", "Cp7App\Cp7App.iOS\Cp7App.iOS.csproj", "{72E1229E-0DD2-4C67-8BCB-FD9FA4F39DE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cp7App", "Cp7App\Cp7App\Cp7App.csproj", "{5A1BF534-5048-489D-A421-DFC3ECF56E08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cp7App", "Cp7App\Cp7App\Cp7App.csproj", "{5A1BF534-5048-489D-A421-DFC3ECF56E08}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibEsptouch", "LibEsptouch\LibEsptouch.csproj", "{6C8EB0D1-AC22-478A-820F-07FFC9BA9A9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cp7MultiPlatformLibrary", "Cp7MultiPlatformLibrary\Cp7MultiPlatformLibrary.csproj", "{A7CBFF00-2AC0-4E22-9091-AF455C0D73A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cp7MultiPlatformLibrary", "Cp7MultiPlatformLibrary\Cp7MultiPlatformLibrary.csproj", "{A7CBFF00-2AC0-4E22-9091-AF455C0D73A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

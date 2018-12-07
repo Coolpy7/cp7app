@@ -80,16 +80,14 @@ namespace Cp7App.Views
                     }
                     if (et_pwd.Text == null)
                     {
-                        ai.IsRunning = false;
-                        await Application.Current.MainPage.DisplayAlert("Coolpy7", "请填写当前Wifi密码", "OK");
-                        return;
+                        et_pwd.Text = "";
                     }
 
                     List<SmartConfigResult> res = await EspTouch.SetSmartConfigTask(ssids[0], ssids[1], et_pwd.Text, bmode, dc);
                     ai.IsRunning = false;
                     if (res.Count == 1 && !res[0].IsCancel && !res[0].IsSus)
                     {
-                        await Application.Current.MainPage.DisplayAlert("Coolpy7", "没有任何设备配网成功", "OK");
+                        await Application.Current.MainPage.DisplayAlert("Coolpy7", "没有收到任何设备配网成功信息(或SSID和密码错误)", "OK");
                         return;
                     }
                     var resinfo =  Newtonsoft.Json.JsonConvert.SerializeObject(res);

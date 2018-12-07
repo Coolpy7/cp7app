@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Cp7App.Views.SmarConfigPage">
     <ContentPage.Content>
-        <StackLayout Spacing="12" Padding="15">
+        <StackLayout Spacing="8" Padding="15">
             <Label Text="SSID" FontSize="Medium" />
             <Entry x:Name="tb_ssid" FontSize="Small" IsEnabled="False" />
             <Label Text="BSSID" FontSize="Medium" />
@@ -21,6 +21,7 @@
             </Picker>
             <Button x:Name="bt_start" Text="开始配网"></Button>
             <Button x:Name="bt_cancel" Text="停止配网"></Button>
+            <Label Text="本功能不支持5G Wifi网络" FontSize="Medium" />
             <ActivityIndicator x:Name="ai" />
         </StackLayout>
     </ContentPage.Content>

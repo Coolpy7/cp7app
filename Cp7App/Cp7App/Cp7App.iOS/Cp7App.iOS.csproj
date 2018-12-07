@@ -65,6 +65,7 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Coolpy7Task.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
@@ -136,6 +137,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
+    <ProjectReference Include="..\..\Cp7MultiPlatformLibrary\Cp7MultiPlatformLibrary.csproj">
+      <Project>{a7cbff00-2ac0-4e22-9091-af455c0d73a4}</Project>
+      <Name>Cp7MultiPlatformLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Cp7App\Cp7App.csproj">
       <Project>{EC61F6A7-DEC2-4C09-A453-E42F61240510}</Project>
       <Name>Cp7App</Name>
