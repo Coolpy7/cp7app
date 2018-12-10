@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>coolpy.net</Authors>
+    <Product>Coolpy7</Product>
+    <Description>Coolpy7 IOT App</Description>
+    <Copyright>coolpy.net</Copyright>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
